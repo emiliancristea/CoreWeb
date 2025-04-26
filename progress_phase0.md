@@ -7,7 +7,7 @@
 | Task                                           | Status      | Notes                                                                                                                               |
 | :--------------------------------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Project Structure and Version Control       | Done        | Initialized Git repo, created directories, basic CMake, `.gitignore`, `README.md`, Issue Templates, `CODE_OF_CONDUCT.md`, Docs stubs. |
-| 2. CI/CD Configuration                         | To Do       |                                                                                                                                     |
+| 2. CI/CD Configuration                         | In Progress | Created basic workflow file (`ci.yml`) with matrix build jobs (placeholder steps).                                                  |
 | 3. Technology Stack Finalization               | To Do       |                                                                                                                                     |
 | 4. Shared Libraries Setup                      | To Do       |                                                                                                                                     |
 | 5. CLI Tool - Initial Structure                | To Do       |                                                                                                                                     |
@@ -26,4 +26,6 @@
 *   **[Timestamp]** - Task 1: Added `CODE_OF_CONDUCT.md`.
 *   **[Timestamp]** - Task 1: Added root `CMakeLists.txt` and placeholder CMake files in `libs`, `core`, `cli`.
 *   **[Timestamp]** - Task 1: Added `docs/SETUP.md` and `docs/CONTRIBUTING.md`.
-*   **[Timestamp]** - Created `progress_phase0.md`. 
+*   **[Timestamp]** - Created `progress_phase0.md`.
+*   **[Timestamp]** - Task 2: Created `.github/workflows` directory.
+*   **[Timestamp]** - Task 2: Added initial `ci.yml` workflow file. 

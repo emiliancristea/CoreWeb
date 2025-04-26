@@ -1,0 +1,52 @@
+name: CoreWeb CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: ${{ matrix.os }} Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        # Add compiler matrix later if needed (GCC, Clang, MSVC)
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # --- Setup Steps (Placeholder/Basic) ---
+    # More detailed setup (vcpkg, specific compilers) will be added later
+
+    - name: Set up CMake
+      uses: jwlawson/actions-setup-cmake@v1
+      with:
+        cmake-version: '3.20.x' # Match minimum requirement
+
+    # --- Build Steps (Placeholder) ---
+    # Actual build steps will depend on vcpkg integration and CMake targets
+
+    - name: Configure CMake (Placeholder)
+      run: echo "cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=[path-to-vcpkg]/scripts/buildsystems/vcpkg.cmake" # Placeholder command
+
+    - name: Build (Placeholder)
+      run: echo "cmake --build build" # Placeholder command
+
+    # --- Test Steps (Placeholder) ---
+    # Add testing steps later (GoogleTest, etc.)
+
+    - name: Run Tests (Placeholder)
+      run: echo "ctest --test-dir build" # Placeholder command
+
+    # --- Linting/Analysis Steps (Placeholder) ---
+    # Add Clang-Tidy, Bloaty, etc. later
+
+    - name: Lint (Placeholder)
+      run: echo "Linting steps go here"
+
+    - name: Binary Size Analysis (Placeholder)
+      run: echo "Binary size analysis steps go here" 
