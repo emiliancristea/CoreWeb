@@ -1,0 +1,34 @@
+# Build artifacts
+build/
+dist/
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+*.exe
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.dir/
+
+# vcpkg
+vcpkg_installed/
+
+# IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log 
