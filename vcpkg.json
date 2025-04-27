@@ -1,0 +1,11 @@
+{
+  "name": "coreweb",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "nlohmann-json",
+    "cpp-httplib",
+    "sqlite3",
+    "libcurl",
+    "gtest"
+  ]
+}
