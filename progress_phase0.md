@@ -7,8 +7,8 @@
 | Task                                           | Status      | Notes                                                                                                                               |
 | :--------------------------------------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Project Structure and Version Control       | Done        | Initialized Git repo, created directories, basic CMake, `.gitignore`, `README.md`, Issue Templates, `CODE_OF_CONDUCT.md`, Docs stubs. |
-| 2. CI/CD Configuration                         | In Progress | Created basic workflow file (`ci.yml`) with matrix build jobs (placeholder steps).                                                  |
-| 3. Technology Stack Finalization               | In Progress | Created `docs/TECHNOLOGIES.md` and initial `vcpkg.json` manifest.                                                                   |
+| 2. CI/CD Configuration                         | In Progress | Created basic workflow file (`ci.yml`). Updated to use vcpkg.                                                               |
+| 3. Technology Stack Finalization               | In Progress | Created `docs/TECHNOLOGIES.md` and initial `vcpkg.json`. Integrated vcpkg with CMake & CI (basic check). Needs CI run verification. |
 | 4. Shared Libraries Setup                      | To Do       |                                                                                                                                     |
 | 5. CLI Tool - Initial Structure                | To Do       |                                                                                                                                     |
 | 6. Starter Kit Setup                           | To Do       |                                                                                                                                     |
@@ -30,4 +30,7 @@
 *   **[Timestamp]** - Task 2: Created `.github/workflows` directory.
 *   **[Timestamp]** - Task 2: Added initial `ci.yml` workflow file.
 *   **[Timestamp]** - Task 3: Created `docs/TECHNOLOGIES.md`.
-*   **[Timestamp]** - Task 3: Created initial `vcpkg.json`. 
+*   **[Timestamp]** - Task 3: Created initial `vcpkg.json`.
+*   **[Timestamp]** - Task 2/3: Updated `ci.yml` to install and use vcpkg.
+*   **[Timestamp]** - Task 3: Updated root `CMakeLists.txt` to find vcpkg packages.
+*   **[Timestamp]** - Task 3: Added temporary `main_temp.cpp` for verification. 
